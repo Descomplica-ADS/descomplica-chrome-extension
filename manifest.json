@@ -1,0 +1,26 @@
+{
+    "name": "DescomplicaBot",
+    "description": "A bot to get all answers and compile in an unique text",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "scripting",
+        "storage",
+        "tabs",
+        "tabCapture",
+        "browsingData",
+        "activeTab"
+    ],
+    "action": {
+        "default_title": "DescomplicaBot",
+        "default_popup": "popup.html"
+    },
+    "externally_connectable": {
+        "matches": [
+            "https://*.descomplica.com.br/*"
+        ]
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    }
+}
